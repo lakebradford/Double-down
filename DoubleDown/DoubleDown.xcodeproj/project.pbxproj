@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		022C40FF17AE279C00385168 /* DoubleBasicHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleBasicHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		022C40FF17AE279C00385168 /* DoubleDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		022C410217AE279C00385168 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		022C410417AE279C00385168 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		022C410617AE279C00385168 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +62,7 @@
 		022C40F617AE279C00385168 = {
 			isa = PBXGroup;
 			children = (
-				022C410817AE279C00385168 /* DoubleBasicHelloWorld */,
+				022C410817AE279C00385168 /* DoubleDown */,
 				022C410117AE279C00385168 /* Frameworks */,
 				022C410017AE279C00385168 /* Products */,
 			);
@@ -71,7 +71,7 @@
 		022C410017AE279C00385168 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				022C40FF17AE279C00385168 /* DoubleBasicHelloWorld.app */,
+				022C40FF17AE279C00385168 /* DoubleDown.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		022C410817AE279C00385168 /* DoubleBasicHelloWorld */ = {
+		022C410817AE279C00385168 /* DoubleDown */ = {
 			isa = PBXGroup;
 			children = (
 				022C411117AE279C00385168 /* DRAppDelegate.h */,
@@ -98,7 +98,7 @@
 				022C411D17AE279C00385168 /* DRViewController.xib */,
 				022C410917AE279C00385168 /* Supporting Files */,
 			);
-			path = DoubleBasicHelloWorld;
+			path = DoubleDown;
 			sourceTree = "<group>";
 		};
 		022C410917AE279C00385168 /* Supporting Files */ = {
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		022C40FE17AE279C00385168 /* DoubleBasicHelloWorld */ = {
+		022C40FE17AE279C00385168 /* DoubleDown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 022C412217AE279C00385168 /* Build configuration list for PBXNativeTarget "DoubleBasicHelloWorld" */;
+			buildConfigurationList = 022C412217AE279C00385168 /* Build configuration list for PBXNativeTarget "DoubleDown" */;
 			buildPhases = (
 				022C40FB17AE279C00385168 /* Sources */,
 				022C40FC17AE279C00385168 /* Frameworks */,
@@ -130,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = DoubleBasicHelloWorld;
+			name = DoubleDown;
 			productName = DoubleBasicHelloWorld;
-			productReference = 022C40FF17AE279C00385168 /* DoubleBasicHelloWorld.app */;
+			productReference = 022C40FF17AE279C00385168 /* DoubleDown.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,12 +144,18 @@
 				CLASSPREFIX = DR;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Double Robotics, Inc.";
+				TargetAttributes = {
+					022C40FE17AE279C00385168 = {
+						DevelopmentTeam = NHN3QM73QY;
+					};
+				};
 			};
-			buildConfigurationList = 022C40FA17AE279C00385168 /* Build configuration list for PBXProject "DoubleBasicHelloWorld" */;
+			buildConfigurationList = 022C40FA17AE279C00385168 /* Build configuration list for PBXProject "DoubleDown" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 022C40F617AE279C00385168;
@@ -157,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				022C40FE17AE279C00385168 /* DoubleBasicHelloWorld */,
+				022C40FE17AE279C00385168 /* DoubleDown */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +281,7 @@
 		022C412317AE279C00385168 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = NHN3QM73QY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
@@ -282,6 +289,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chiefbeef.DoubleBasicHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -290,6 +299,7 @@
 		022C412417AE279C00385168 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = NHN3QM73QY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
@@ -297,6 +307,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "DoubleBasicHelloWorld/DoubleBasicHelloWorld-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chiefbeef.DoubleBasicHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -305,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		022C40FA17AE279C00385168 /* Build configuration list for PBXProject "DoubleBasicHelloWorld" */ = {
+		022C40FA17AE279C00385168 /* Build configuration list for PBXProject "DoubleDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				022C412017AE279C00385168 /* Debug */,
@@ -314,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		022C412217AE279C00385168 /* Build configuration list for PBXNativeTarget "DoubleBasicHelloWorld" */ = {
+		022C412217AE279C00385168 /* Build configuration list for PBXNativeTarget "DoubleDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				022C412317AE279C00385168 /* Debug */,
